@@ -12,6 +12,6 @@
         android:layout_centerInParent="true"
         android:src="@drawable/ic_icons8_news"
         android:id="@+id/imageView"
-        />
+        android:contentDescription="TODO" />
 
 </RelativeLayout>

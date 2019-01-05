@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Window;
 import android.view.WindowManager;
-import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 
 public class Browser extends AppCompatActivity {
@@ -23,16 +22,7 @@ public class Browser extends AppCompatActivity {
 
         String intent = getIntent().getStringExtra("url");
 
-        browser = (WebView) findViewById(R.id.web);
-        browser.setWebChromeClient(new WebChromeClient() {
-            public void onProgressChanged(WebView view, int progress)
-            {
-                setTitle("Loading...");
-                setProgress(progress * 100);
-                if(progress == 100)
-                    setTitle(R.string.app_name);
-            }
-        });
+        browser = findViewById(R.id.web);
         browser.getSettings().setJavaScriptEnabled(true);
         browser.loadUrl(intent);
     }

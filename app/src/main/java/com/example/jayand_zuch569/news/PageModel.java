@@ -42,7 +42,6 @@ public class PageModel implements Parcelable {
         public PageModel createFromParcel(Parcel in) {
             return new PageModel(in);
         }
-
         @Override
         public PageModel[] newArray(int size) {
             return new PageModel[size];

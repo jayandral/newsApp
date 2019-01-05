@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TopicSelection">
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:text="Topics"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_height="40dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/first"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                >
+
+                <Button
+                    android:layout_width="0dp"
+                    android:background="@drawable/button_background"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/business"
+                    android:text="business"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.04"
+                    />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:background="@drawable/button_background"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/politics"
+                    android:text="politics"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_below="@id/first"
+                android:id="@+id/space_first"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/second"
+                android:layout_below="@+id/space_first"
+                android:weightSum="2.04"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                >
+
+                <Button
+                    android:layout_width="0dp"
+                    android:background="@drawable/button_background"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/sports"
+                    android:text="sports"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.04"
+                    />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:background="@drawable/button_background"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/startup"
+                    android:text="startup"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_below="@id/second"
+                android:id="@+id/space_second"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/space_second"
+                android:id="@+id/third"
+                android:weightSum="2.04"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                >
+
+                <Button
+                    android:layout_width="0dp"
+                    android:background="@drawable/button_background"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/entertainment"
+                    android:text="entertainment"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.04"
+                    />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:background="@drawable/button_background"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/hatke"
+                    android:text="hatke"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_below="@id/third"
+                android:id="@+id/space_third"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/fourth"
+                android:layout_below="@+id/space_third"
+                android:weightSum="2.04"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                >
+
+                <Button
+                    android:layout_width="0dp"
+                    android:background="@drawable/button_background"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/international"
+                    android:text="international"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.04"
+                    />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:background="@drawable/button_background"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/automobile"
+                    android:text="automobile"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_below="@id/fourth"
+                android:id="@+id/space_fourth"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/fifth"
+                android:layout_below="@+id/space_fourth"
+                android:weightSum="2.04"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                >
+
+                <Button
+                    android:layout_width="0dp"
+                    android:background="@drawable/button_background"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/technology"
+                    android:text="technology"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.04"
+                    />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:background="@drawable/button_background"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/science"
+                    android:text="science"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_below="@id/fifth"
+                android:id="@+id/space_fifth"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/sixth"
+                android:layout_below="@+id/space_fifth"
+                android:weightSum="2.04"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                >
+
+                <Button
+                    android:layout_width="0dp"
+                    android:background="@drawable/button_background"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/fashion"
+                    android:text="fashion"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.04"
+                    />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:background="@drawable/button_background"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/miscellaneous"
+                    android:text="miscellaneous"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_below="@id/sixth"
+                android:id="@+id/space_sixth"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/seventh"
+                android:gravity="center"
+                android:layout_below="@+id/space_sixth"
+                android:weightSum="2.04"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                >
+
+                <Button
+                    android:layout_width="0dp"
+                    android:background="@drawable/button_background"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/india"
+                    android:text="india"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.04"
+                    />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:background="@drawable/button_background"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/travel"
+                    android:text="travel"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_below="@id/seventh"
+                android:id="@+id/space_seventh"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/eight"
+                android:gravity="center"
+                android:layout_below="@+id/space_seventh"
+                android:weightSum="2.04"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="20dp"
+                >
+
+                <Button
+                    android:layout_width="0dp"
+                    android:background="@drawable/button_background"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/done"
+                    android:text="done"
+                    />
+
+                <!--<TextView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="0.04"-->
+                <!--/>-->
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

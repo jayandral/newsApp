@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.jayand_zuch569.news">
 
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -14,15 +13,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Dashboard"/>
-        <activity android:name=".Browser" />
+        <activity android:name=".Dashboard" android:screenOrientation="portrait"/>
+        <activity android:name=".Browser" android:screenOrientation="portrait"/>
+        <activity android:name=".TopicSelection" android:screenOrientation="portrait"/>
+        <activity android:name=".Bookmark" android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
